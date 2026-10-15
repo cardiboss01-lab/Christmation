@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8dce7">
+  <meta name="description" content="An invitation to Siyamthanda's Christmation celebration.">
+  <title>Siyamthanda's Christmation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="access-screen" id="accessScreen" aria-labelledby="accessTitle">
+    <div class="access-card">
+      <div class="bow bow-large" aria-hidden="true">୨୧</div>
+      <p class="eyebrow">A special invitation</p>
+      <h1 id="accessTitle">You are invited</h1>
+      <p class="access-copy">Enter the private passcode to open Siyamthanda's Christmation invitation.</p>
+      <form id="passwordForm">
+        <label class="sr-only" for="passwordInput">Invitation password</label>
+        <input id="passwordInput" type="password" placeholder="Enter passcode" autocomplete="off" required>
+        <button class="button button-gold" type="submit">Open invitation <span aria-hidden="true">↗</span></button>
+        <p class="error-message" id="passwordError" role="alert" aria-live="polite"></p>
+      </form>
+      <p class="access-foot">With love, faith &amp; joy <span aria-hidden="true">✝</span></p>
+    </div>
+    <span class="corner-cross cross-one" aria-hidden="true">✝</span>
+    <span class="corner-cross cross-two" aria-hidden="true">✝</span>
+  </div>
+
+  <main id="invitation" class="invitation is-hidden">
+    <div class="top-ribbon"><span>୨୧</span> A day of faith, love &amp; celebration <span>୨୧</span></div>
+    <header class="hero">
+      <div class="hero-ornament ornament-left" aria-hidden="true">✝</div>
+      <div class="hero-ornament ornament-right" aria-hidden="true">✝</div>
+      <p class="eyebrow">You are warmly invited to celebrate</p>
+      <div class="bow hero-bow" aria-hidden="true">୨୧</div>
+      <h1>Siyamthanda's<br><em>Christmation</em></h1>
+      <div class="gold-rule"><span>✧</span></div>
+      <p class="hero-verse">“May your faith guide you, your heart be filled with grace,<br class="desktop-only"> and your path shine with blessings.”</p>
+      <div class="date-pill"><span>15</span><span class="date-divider"></span><span>NOVEMBER<br><small>2026</small></span></div>
+      <p class="seated-note">Please be seated by <strong>1:00 PM</strong></p>
+      <a class="scroll-cue" href="#details" aria-label="Scroll to invitation details">↓</a>
+    </header>
+
+    <section class="intro section-pad">
+      <span class="small-cross" aria-hidden="true">✝</span>
+      <p class="eyebrow">A meaningful milestone</p>
+      <h2>A beautiful moment<br><em>in faith</em></h2>
+      <p class="body-copy">With grateful hearts, we invite you to join us as we celebrate Siyamthanda's special day. Your presence will make this occasion even more meaningful.</p>
+      <div class="bow bow-small" aria-hidden="true">୨୧</div>
+    </section>
+
+    <section id="details" class="details-section section-pad">
+      <p class="eyebrow">The celebration</p>
+      <h2>Save the <em>date</em></h2>
+      <div class="details-grid">
+        <article class="detail-card">
+          <div class="detail-icon" aria-hidden="true">✧</div>
+          <p class="card-label">DATE</p>
+          <h3>Sunday, 15 November</h3>
+          <p>2026</p>
+        </article>
+        <article class="detail-card">
+          <div class="detail-icon" aria-hidden="true">◷</div>
+          <p class="card-label">TIME</p>
+          <h3>1:00 PM</h3>
+          <p>Please be seated on time</p>
+        </article>
+        <article class="detail-card">
+          <div class="detail-icon" aria-hidden="true">⌖</div>
+          <p class="card-label">VENUE</p>
+          <h3>28201 Kgatliso</h3>
+          <p>Please contact the host if you need directions.</p>
+        </article>
+      </div>
+      <div class="countdown-card">
+        <p class="eyebrow">Counting down to the special day</p>
+        <div id="countdown" class="countdown" aria-live="off">
+          <div><strong id="days">--</strong><span>Days</span></div>
+          <div><strong id="hours">--</strong><span>Hours</span></div>
+          <div><strong id="minutes">--</strong><span>Minutes</span></div>
+          <div><strong id="seconds">--</strong><span>Seconds</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dress-section section-pad">
+      <p class="eyebrow">Please dress accordingly</p>
+      <h2>The dress <em>code</em></h2>
+      <div class="dress-grid">
+        <article class="dress-card men-card">
+          <div class="swatch swatch-black" aria-hidden="true"></div>
+          <p class="card-label">GENTLEMEN</p>
+          <h3>Formal in all black</h3>
+          <p>Elegant, formal black attire.</p>
+        </article>
+        <article class="dress-card ladies-card">
+          <div class="swatch swatch-pink" aria-hidden="true"></div>
+          <p class="card-label">LADIES</p>
+          <h3>Formal in pink</h3>
+          <p>Beautiful formal pink attire.</p>
+        </article>
+      </div>
+      <p class="dress-note">Thank you for helping make the day beautiful and coordinated.</p>
+    </section>
+
+    <section class="gift-section section-pad">
+      <div class="gift-cross" aria-hidden="true">✝</div>
+      <p class="eyebrow">A thoughtful gesture</p>
+      <h2>Gifts are <em>required</em></h2>
+      <p class="body-copy">Guests are kindly reminded that bringing a gift is compulsory. There is no specific gift requirement — any thoughtful gift is welcome.</p>
+      <div class="bow bow-small" aria-hidden="true">୨୧</div>
+    </section>
+
+    <section class="rsvp-section section-pad">
+      <div class="rsvp-card">
+        <span class="rsvp-cross" aria-hidden="true">✝</span>
+        <p class="eyebrow">Kindly respond</p>
+        <h2>Will you <em>join us?</em></h2>
+        <p class="body-copy">Please let us know if you will be attending by sending your RSVP on WhatsApp.</p>
+        <a class="button button-whatsapp" id="rsvpButton" href="https://wa.me/27639442691" target="_blank" rel="noopener noreferrer">
+          <span class="whatsapp-mark" aria-hidden="true">◉</span> RSVP via WhatsApp
+        </a>
+        <p class="phone-number">+27 63 944 2691</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-bow" aria-hidden="true">୨୧</div>
+      <p class="footer-title">Siyamthanda's Christmation</p>
+      <p>May this day be filled with grace and blessings.</p>
+      <div class="footer-crosses" aria-hidden="true">✝ &nbsp; ✧ &nbsp; ✝</div>
+      <button class="music-button" id="musicButton" type="button" aria-pressed="false">
+        <span class="music-icon" aria-hidden="true">♫</span>
+        <span id="musicButtonText">Play background music</span>
+      </button>
+      <p class="music-note" id="musicNote">Tap to play Nayvee's Prayer.</p>
+    </footer>
+  </main>
+
+  <audio id="backgroundMusic" preload="none" loop>
+    <source src="assets/nayvees-prayer.mp3" type="audio/mpeg">
+    Your browser does not support audio playback.
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>
